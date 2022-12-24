@@ -6,7 +6,7 @@ import { ApiContext } from '../../Context/Context'
 export default function Movies() {
   
  
-  const {allMovies,pages,currentPage,changePage,prevPage,nextPage,search}= useContext(ApiContext);
+  const {allMovies,pages,currentPage,changePage,prevPage,nextPage,searchMovies}= useContext(ApiContext);
 
 
   
@@ -25,7 +25,7 @@ export default function Movies() {
   {allMovies  ?  //l data gat mn l api a3rdha 
 
 <div className="container mt-4">
-<input type="search" className='form form-control mb-5' placeholder='search ...' onChange={(e)=>search(e,'movie')} />
+<input type="search" className='form form-control mb-5' placeholder='search ...' onChange={(e)=>searchMovies(e)} />
 
 <div className="row ">
 

@@ -9,7 +9,7 @@ export default function Movies() {
   
   
  
-  const {allPerson,pages,currentPage,changePage,prevPage,nextPage,search}= useContext(ApiContext);
+  const {allPerson,pages,currentPage,changePage,prevPage,nextPage,searchperson}= useContext(ApiContext);
   
   return (
 
@@ -23,7 +23,7 @@ export default function Movies() {
   {allPerson  ?  //l data gat mn l api a3rdha 
 
 <div className="container mt-4">
-<input type="search" className='form form-control mb-4' placeholder='search ...' onChange={(e)=>search(e,'person')} />
+<input type="search" className='form form-control mb-4' placeholder='search ...' onChange={(e)=>searchperson(e)} />
 
 
 <div className="row ">

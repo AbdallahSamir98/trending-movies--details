@@ -7,7 +7,7 @@ import home from '../Home/home.module.css'
 
 export default function Tv() {
   
-  const {allTv,pages,currentPage,changePage,prevPage,nextPage,search}= useContext(ApiContext);
+  const {allTv,pages,currentPage,changePage,prevPage,nextPage,searchTv}= useContext(ApiContext);
 
   
 
@@ -27,7 +27,7 @@ export default function Tv() {
 
 <div className="container mt-4">
 
-<input type="search" className='form form-control' placeholder='search ...' onChange={(e)=>search(e,'tv')} />
+<input type="search" className='form form-control' placeholder='search ...' onChange={(e)=>searchTv(e)} />
 
 
 
