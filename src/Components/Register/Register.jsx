@@ -73,7 +73,7 @@ function displayValidationError(key){ //function for display error validation to
   async function sendDatatpApi() {
     //api function for send form data to the backend
     let { data } = await axios.post(
-      "https://route-movies-api.vercel.app/signup",
+      "https://movies-api.routemisr.com/signup",
       user
     );
     console.log(data);
